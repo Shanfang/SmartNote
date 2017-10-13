@@ -27,9 +27,9 @@ const routes: Routes = [
     },
     {
         path: "home",
-        //redirectTo: "notes",
-        //pathMatch: "full",
-        component: HomeComponent
+        redirectTo: "notes",
+        pathMatch: "full",
+        //component: HomeComponent
     },
     {
         path: "**",
