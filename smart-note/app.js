@@ -54,11 +54,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', index);
 app.use('/todos', todos);
 
-  app.listen(3000,() => {
-    getJSON(url,function(err, data) {
-        console.log('app listening on port 3000.')
-    });
-  })
+  // app.listen(3000,() => {
+  //   getJSON(url,function(err, data) {
+  //       console.log('app listening on port 3000.')
+  //   });
+  // })
 // allow access to database
 // Add headers
 app.use(function (req, res, next) {
