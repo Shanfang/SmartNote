@@ -8,7 +8,8 @@ var cors = require('cors');
 var index = require('./routes/index');
 var todos = require('./routes/todos');
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/SmartNode', function(err) {
+mongoose.connect('test-user:gogators@ds157653.mlab.com:57653/smart-note', function(err) {
+// mongoose.connect('mongodb://localhost/SmartNode', function(err) {
     if(err) {
         console.log('connection error', err);
     } else {
