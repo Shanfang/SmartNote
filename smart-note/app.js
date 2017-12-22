@@ -21,7 +21,7 @@ var XMLHttpRequest = require("xmlhttprequest-ssl").XMLHttpRequest;
 var routes = require('./routes/index');
 var request = require('request');
 // var url = 'http://localhost:4200/login';
-var url = 'http://smart-note-deployment.herokuapp.com/login';
+var url = 'https://smart-note-deployment.herokuapp.com/login';
 var getJSON = function(url, callback) {
     var xhr = new XMLHttpRequest();
     xhr.open('GET', url, true);
