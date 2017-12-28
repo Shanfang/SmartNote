@@ -1,5 +1,13 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Build Status](https://travis-ci.org/Shanfang/SmartNote.svg?branch=master)](https://travis-ci.org/Shanfang/SmartNote)
 
+Shanfang Zhao Github: Shanfang
+
+Xiaohui Huang Github: CindyHXH 
+
+Lujia Yu Github: vicyu666
+
+Haoran Yu  Github: jeness 
+
 # SmartNote
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.2.
