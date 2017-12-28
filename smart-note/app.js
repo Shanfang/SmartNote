@@ -20,8 +20,8 @@ var app = express();
 var XMLHttpRequest = require("xmlhttprequest-ssl").XMLHttpRequest;
 var routes = require('./routes/index');
 var request = require('request');
-// var url = 'http://localhost:4200/login';
-var url = 'https://smart-note-deployment.herokuapp.com/login';
+var url = 'http://localhost:4200/login';
+// var url = 'https://smart-note-deployment.herokuapp.com/login';
 var getJSON = function(url, callback) {
     var xhr = new XMLHttpRequest();
     xhr.open('GET', url, true);
@@ -54,11 +54,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', index);
 app.use('/todos', todos);
 
-  // app.listen(3000,() => {
-  //   getJSON(url,function(err, data) {
-  //       console.log('app listening on port 3000.')
-  //   });
-  // })
+  app.listen(3000,() => {
+    getJSON(url,function(err, data) {
+        console.log('app listening on port 3000.')
+    });
+  })
 // allow access to database
 // Add headers
 app.use(function (req, res, next) {
