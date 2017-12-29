@@ -8,7 +8,8 @@ var cors = require('cors');
 var index = require('./routes/index');
 var todos = require('./routes/todos');
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/SmartNode', function(err) {
+mongoose.connect('test-user:gogators@ds157653.mlab.com:57653/smart-note', function(err) {
+// mongoose.connect('mongodb://localhost/SmartNode', function(err) {
     if(err) {
         console.log('connection error', err);
     } else {
@@ -19,7 +20,8 @@ var app = express();
 var XMLHttpRequest = require("xmlhttprequest-ssl").XMLHttpRequest;
 var routes = require('./routes/index');
 var request = require('request');
-var url = 'http://localhost:4200/login';
+// var url = 'http://localhost:4200/login';
+var url = 'https://smart-note-deployment.herokuapp.com/login';
 var getJSON = function(url, callback) {
     var xhr = new XMLHttpRequest();
     xhr.open('GET', url, true);
