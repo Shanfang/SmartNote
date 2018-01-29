@@ -19,7 +19,7 @@ describe('IndexComponent', () => {
       ],
       declarations: [ IndexComponent ],
       providers: [
-        MsgService
+       MsgService
       ]
     })
     .compileComponents();

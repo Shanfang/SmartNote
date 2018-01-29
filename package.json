@@ -4,8 +4,7 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve --proxy-config proxy.config.json --port 4300 --host 0.0.0.0",
-    "build": "ng build",
+    "build:production": "node --version",
     "test": "ng test --single-run",
     "lint": "ng lint",
     "e2e": "ng e2e",
@@ -34,6 +33,7 @@
     "mocha": "^4.0.1",
     "mongoose": "^4.12.3",
     "nodemon": "^1.12.1",
+    "nyc": "^11.3.0",
     "rxjs": "^5.4.2",
     "simplemde": "^1.11.2",
     "zone.js": "^0.8.14"

@@ -1,5 +1,6 @@
 // import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 // import { FormsModule } from '@angular/forms';
+// import { MsgService } from '../../services/msg/msg.service';
 
 // import { AddLinkNoteComponent } from './add-link-note.component';
 
@@ -9,8 +10,11 @@
 
 //   beforeEach(async(() => {
 //     TestBed.configureTestingModule({
-//       declarations: [ AddLinkNoteComponent ],
 //       imports: [FormsModule],
+//       declarations: [ AddLinkNoteComponent ],      
+//       providers: [
+//         MsgService
+//        ]
 //     })
 //     .compileComponents();
 //   }));
